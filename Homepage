@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backhome"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+
+
+
+
+
+
+<ScrollView
+    android:id="@+id/scrolviewlayout"
+    android:layout_width="match_parent"
+   android:layout_marginBottom="68dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_dehaze_24" />
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btn_serarch" />
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/secondlayout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/topbar"
+            android:layout_marginTop="160dp"
+           >
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoStart="true"
+                android:flipInterval="2000"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+
+
+                    android:src="@drawable/svmerry" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/svimg" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/football" />
+
+
+            </ViewFlipper>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdlayout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/secondlayout"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_back_home_page">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="35dp"
+
+                    android:fontFamily="@font/black_ops_one"
+
+                    android:text="ARENA \nBOOKING"
+                    android:textColor="@color/black"
+                    android:textSize="36dp" />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/studim"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fourthlayout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/thirdlayout"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="arenabooking"
+            android:background="@drawable/btn_back_home_page">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="35dp"
+
+                    android:fontFamily="@font/black_ops_one"
+
+                    android:text="ARENA \nBOOKING"
+                    android:textColor="@color/black"
+                    android:textSize="36dp" />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/rakcet"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#83F987">
+            <LinearLayout
+                android:id="@+id/bottembar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:background="#83F987"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_baseline_date_range_24" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_baseline_location_on_24" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/stringupupscreen" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/ic_baseline_notifications_24" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/ic_baseline_chat_24" />
+
+
+            </LinearLayout>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
