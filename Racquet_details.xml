@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="#00ff08"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/black_ops_one"
+        android:text="STRING-UP"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/RD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RACQUET DETAILS"
+        android:fontFamily="@font/black_ops_one"
+        android:layout_below="@id/topbar"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/RD"
+        android:layout_margin="20dp"
+        android:background="@drawable/racquetspecs">
+
+        <TextView
+            android:id="@+id/ST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="STRING TYPE"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+        <Spinner
+
+            android:id="@+id/spinnerST"
+            android:layout_below="@id/ST"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/STT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="STRING TENSION "
+            android:layout_below="@id/spinnerST"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+        <Spinner
+
+            android:id="@+id/spinnerSTT"
+            android:layout_below="@id/STT"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/SC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="STRING COLOUR "
+            android:layout_below="@id/spinnerSTT"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+        <Spinner
+
+            android:id="@+id/spinnerSC"
+            android:layout_below="@id/SC"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="RACQUET BRAND"
+            android:textSize="18dp"
+            android:layout_below="@id/spinnerSC"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/RRB"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RB"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:id="@+id/RM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="RACQUET MODEL "
+            android:layout_below="@id/RRB"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/RRM"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RM"
+            android:layout_marginLeft="40dp"/>
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:text="ADD RACQUET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:onClick="openBRacquetDetails"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
